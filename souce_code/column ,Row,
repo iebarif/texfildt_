@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MaterialApp(
+    title: 'hfso',
+    home: Scaffold(
+      appBar: AppBar(title: Text("hfso"),),
+      body: MyApps(),
+    ),
+  ));
+}
+
+class MyApps extends StatelessWidget {
+  const MyApps({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+mainAxisAlignment:MainAxisAlignment.center,
+      children: [
+        Text('hi'),
+        Text('this'),
+        Text('is'),
+   Row(
+     mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+    Text("hi my name is ariful islam"),
+    ],
+    ),
+      ],
+    );
+  }
+}

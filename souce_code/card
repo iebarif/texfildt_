@@ -1,0 +1,61 @@
+import 'package:flutter/material.dart';
+
+void main() {
+
+  runApp(
+   MaterialApp(
+     title: "hfso",
+     home: Scaffold(
+     appBar: AppBar(
+       title: Text("hfso"),
+     ),
+
+       body: MyApp(),
+     ),
+   )
+  );
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+     return Card(
+       elevation: 5,
+     color: Colors.deepPurple,
+     shadowColor: Colors.cyan,
+     shape:RoundedRectangleBorder(
+       borderRadius: BorderRadius.circular(299),
+       side: BorderSide(
+         color: Colors.cyan, width: 19,
+       )
+     ),
+
+     child: Container(
+       width: 388,
+         height: 200,
+     ),
+    //
+    //   color: Colors.cyan,
+    //   elevation: 9,
+    //   shadowColor: Colors.blue,
+    //   shape: RoundedRectangleBorder(
+    //     borderRadius: BorderRadius.circular(49),
+    //     side: BorderSide(
+    //       color: Colors.yellow,width: 10,
+    //     )
+    //   ),
+    //   child: Container(
+    //     height: 200,
+    //       width: 200,
+    //
+    //   ),
+     );
+  }
+}

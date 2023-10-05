@@ -1,0 +1,69 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(
+    MaterialApp(
+      title: "HFSO",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text("Helpful Friends Social Organaization (HFSO)",)),
+        ),
+        body: MyApp(),
+      ),
+    ),
+  );
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return GridView.count(crossAxisCount: 3,
+      mainAxisSpacing: 3,
+      crossAxisSpacing: 3,
+      children: [
+
+        Container(
+          child: Text("hello"),
+          alignment: Alignment.center,
+          color: Colors.cyan,
+        ),
+        Container(
+          child: Text("hello"),
+          alignment: Alignment.center,
+          color: Colors.cyan,
+        ),
+        Container(
+          child: Text("hello"),
+          alignment: Alignment.center,
+          color: Colors.cyan,
+        ),
+        Container(
+          child: Text("hello"),
+          alignment: Alignment.center,
+          color: Colors.cyan,
+        ),
+        Container(
+          child: Text("hello"),
+          alignment: Alignment.center,
+          color: Colors.cyan,
+        ),
+        Container(
+
+          child: Text("hello"),
+          alignment: Alignment.center,
+          color: Colors.cyan,
+        ),
+
+
+      ],
+
+    );
+  }
+}

@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(
+    MaterialApp(
+      title: ("Hfso"),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("HFSO"),
+        ),
+        body: MyApp(),
+      ),
+    )
+  );
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
+  List<int>list=[];
+  @override
+  void initState(){
+    for( int i=0; i<=100;i++){
+      list.add(i);
+    }
+    super.initState();
+  }
+  Widget build(BuildContext context) {
+    return ListView.builder(
+       itemCount: list.length,
+        itemBuilder:(BuildContext cnx, int Index){
+         return ListTile(
+           title: Text("Item no ${list[Index]}"),
+           leading: Container(
+             height: 49,
+               width: 49,
+             decoration:
+             BoxDecoration(shape: BoxShape.circle, color: Colors.cyan),
+           ),
+           trailing: Icon(Icons.arrow_forward),
+         );
+    });
+  }
+}
